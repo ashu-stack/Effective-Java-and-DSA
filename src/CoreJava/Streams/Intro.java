@@ -16,12 +16,23 @@ public class Intro {
 //        System.out.println(uStream.count());
 
        //Intermediate ops
-        List<Integer> list1 = Arrays.asList(2,87,1,87,54,31,87,87,10);
-        List<Integer> ans = list1.stream().filter(x -> x>20 && x<80).toList();
-       // System.out.println(ans);
-        List<Integer> ans2 = list1.stream().map(x -> x*2).sorted().distinct().toList();
-        System.out.println(list1);
-        System.out.println(ans2);
+//        List<Integer> list1 = Arrays.asList(2,87,1,87,54,31,87,87,10);
+//        List<Integer> ans = list1.stream().filter(x -> x>20 && x<80).toList();
+//       // System.out.println(ans);
+//        List<Integer> ans2 = list1.stream().map(x -> x*2).sorted().distinct().toList();
+//        System.out.println(list1);
+//        System.out.println(ans2);
+//
+        //Question1: Sort and square the array
+        List<Integer> l1 = Arrays.asList(5,4,3,2,1);
+        System.out.println(l1.stream().map(x -> x*x).sorted().toList());
+
+        //Question2: Sum of values
+        List<Integer> l2 = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+        System.out.println(l2.stream().reduce(Integer::sum).get());
+
+        //Questtion3 : Count occurrences
+
 
     }
 }
