@@ -1,6 +1,10 @@
 package CoreJava.Streams;
 
+import java.util.HashMap;
+import java.util.IntSummaryStatistics;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class StreamQuestions {
     public static void main(String[] args) {
@@ -35,6 +39,15 @@ public class StreamQuestions {
 
        int first = list.stream().filter(x -> x>7).findFirst().get();
         System.out.println("8. First element greater than 7 : " + first);
+
+        List<String> stringList = List.of("Kohli", "Dhoni", "Sharma", "Samson", "Sachin", "Sehwag");
+        System.out.println("9. Group by length: "+stringList.stream().collect(Collectors.groupingBy(String::length)));
+        System.out.println(stringList.stream().collect(Collectors.groupingBy(String::length, Collectors.counting())));;
+
+
+        IntSummaryStatistics integers = list.stream().collect(Collectors.summarizingInt(x -> x));
+        System.out.println("10. Max number: " + integers.getMax());
+
 
 
     }
