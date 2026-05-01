@@ -1,4 +1,4 @@
-package Arrays;
+package ArraySums;
 
 public class LinearSearch {
     public static void main(String[] args) {

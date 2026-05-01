@@ -1,4 +1,4 @@
-package Arrays;
+package ArraySums;
 import java.util.Arrays;
 
 public class SelectionSort {

@@ -8,6 +8,8 @@ public class Subsequences {
 //        System.out.println(subset2("", "abc"));
        // permutations("", "abc");
         System.out.println(permutationList("", "abc"));
+        String a = "abd";
+
     }
 
     private static void subset(String p, String up) {

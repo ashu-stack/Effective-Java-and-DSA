@@ -6,30 +6,32 @@ import java.util.stream.Stream;
 
 public class Intro {
     public static void main(String[] args) {
-        List<Integer> list = Arrays.asList(1,2,3,4,5,6,7,7,8,9,11);
+       // int[] arr = {1,2,3,4,5,6,7,7,8,9,11};
+//        List<Integer> list = Arrays.asList(Integer.arr);
 
-        System.out.println(list.stream().filter(x -> x%2==0).filter(x -> x>4).findAny());
-
-        String[] strings = {"Ashu", "Sohu", "Nandu","Ashu", "Sohu", "Nandu","Ashu", "Sohu", "Nandu"};
-        Stream<String> stringStream = Arrays.stream(strings);
-        Stream<String> uStream = stringStream.filter(s -> s.endsWith("u")).distinct();
-        System.out.println(uStream.count());
-
-       //Intermediate ops
-        List<Integer> list1 = Arrays.asList(2,87,1,87,54,31,87,87,10);
-        List<Integer> ans = list1.stream().filter(x -> x>20 && x<80).toList();
-       // System.out.println(ans);
-        List<Integer> ans2 = list1.stream().map(x -> x*2).sorted().distinct().toList();
-        System.out.println(list1);
-        System.out.println(ans2);
-
-        //Question1: Sort and square the array
-        List<Integer> l1 = Arrays.asList(5,4,3,2,1);
-        System.out.println(l1.stream().map(x -> x*x).sorted().toList());
-
-        //Question2: Sum of values
-        List<Integer> l2 = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
-        System.out.println(l2.stream().reduce(Integer::sum).get());
+//
+//        System.out.println(list.stream().filter(x -> x%2==0).filter(x -> x>4).findAny());
+//
+//        String[] strings = {"Ashu", "Sohu", "Nandu","Ashu", "Sohu", "Nandu","Ashu", "Sohu", "Nandu"};
+//        Stream<String> stringStream = Arrays.stream(strings);
+//        Stream<String> uStream = stringStream.filter(s -> s.endsWith("u")).distinct();
+//        System.out.println(uStream.count());
+//
+//       //Intermediate ops
+//        List<Integer> list1 = Arrays.asList(2,87,1,87,54,31,87,87,10);
+//        List<Integer> ans = list1.stream().filter(x -> x>20 && x<80).toList();
+//       // System.out.println(ans);
+//        List<Integer> ans2 = list1.stream().map(x -> x*2).sorted().distinct().toList();
+//        System.out.println(list1);
+//        System.out.println(ans2);
+//
+//        //Question1: Sort and square the array
+//        List<Integer> l1 = Arrays.asList(5,4,3,2,1);
+//        System.out.println(l1.stream().map(x -> x*x).sorted().toList());
+//
+//        //Question2: Sum of values
+//        List<Integer> l2 = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+//        System.out.println(l2.stream().reduce(Integer::sum).get());
 
         //Questtion3 : Count occurrences
 

@@ -9,7 +9,9 @@ public class Main {
             System.out.println("Iteration no: " + i);
             System.out.println("Hello and welcome!");
             System.out.println("Hello and welcome!");
-
+            String a = "f";
+            String b = "fuckthis";
+            boolean l = b.contains(a);
 
         }
 

@@ -2,21 +2,18 @@ package LinkedLists;
 
 public class LinkedListMain {
     public static void main(String[] args) {
-        LL list = new LL();
-        list.insertAtFirst(45);
-        list.insertAtFirst(22);
-
-        list.insertAtFirst(4);
-        list.insertAtFirst(2);
-
-        list.insertAtFirst(5);
-        list.insertAtFirst(12);
+        LinkedList list = new LinkedList();
+        list.insertAtFirst(1);
+        list.insertAtFirst(3);
+        list.insertAtFirst(10);
+        list.insertAtLast(22);
         list.insertAtLast(99);
-        list.insertAtLast(100);
-        list.insert(88,2);
+        list.insertAfterVal(12,10);
 
-       list.display();
-       list.delete(3);
-       list.display();
+        list.display();
+        list.deleteVal(3);
+        list.display();
+
+       // System.out.println(list.size);
     }
 }

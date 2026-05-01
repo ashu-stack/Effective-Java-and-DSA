@@ -1,4 +1,4 @@
-package Arrays;
+package ArraySums;
 
 import java.util.ArrayList;
 import java.util.Arrays;

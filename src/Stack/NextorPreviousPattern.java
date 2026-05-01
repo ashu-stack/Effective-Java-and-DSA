@@ -13,6 +13,8 @@ public class NextorPreviousPattern {
         System.out.println(prevGreater);
     }
 
+
+
     private static ArrayList<Integer> previousGreater(int[] arr) {
         ArrayList<Integer> list = new ArrayList<>();
         Stack<Integer> st = new Stack<>();
